@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string name="app_name">悩みココ！</string>
+    <string name="action_settings">設定</string>
+    <string name="url">http://www.nayamikoko.com/</string>
+    <string name="load">読み込み中...</string>
+    <string name="back">＜</string>
+    <string name="next">＞</string>
+</resources>

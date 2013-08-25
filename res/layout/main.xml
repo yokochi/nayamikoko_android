@@ -1,0 +1,70 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    android:background="#fceda7"
+    tools:context=".MainActivity" >
+
+    <WebView
+        android:id="@+id/web_view"
+        android:layout_width="fill_parent"
+        android:layout_height="fill_parent" 
+        android:layout_above="@+id/footer_linear_layout" />
+
+    <LinearLayout
+        android:id="@+id/main_linearLayout_progress"
+        android:layout_width="fill_parent"
+        android:layout_height="fill_parent"
+        android:layout_alignParentRight="true"
+        android:background="#00000000"
+        android:gravity="center"
+        android:orientation="horizontal" >
+    	
+	    <ProgressBar android:id="@+android:id/progress"
+	        android:layout_width="wrap_content"
+	        android:layout_height="wrap_content" />    	
+    	<TextView 
+    		android:text="@string/load"
+    		android:layout_width="wrap_content"
+    		android:layout_height="wrap_content"
+    		android:layout_marginLeft="10dp"/>
+    	
+    </LinearLayout>
+   	<LinearLayout
+        android:id="@+id/footer_linear_layout"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:gravity="left"
+        android:background="#fceda7"
+        android:orientation="horizontal" >
+	    <Button
+	        android:id="@+id/back_button"
+	        android:layout_width="wrap_content"
+	        android:layout_height="wrap_content"
+	        android:layout_gravity="center"
+	        android:text="@string/back" />
+	    
+	    <Button
+	        android:id="@+id/next_button"
+	        android:layout_width="wrap_content"
+	        android:layout_height="wrap_content"
+	        android:layout_gravity="center"
+	        android:text="@string/next" />
+
+
+        <LinearLayout
+	        android:id="@+id/footer_right_linear_layout"
+	        android:layout_width="fill_parent"
+	        android:layout_height="wrap_content"
+	        android:gravity="right"
+	        android:orientation="horizontal" >
+		    <ImageButton
+		        android:id="@+id/reload_button"
+		        android:layout_width="wrap_content"
+		        android:layout_height="wrap_content"
+		        android:src="@drawable/reload" />
+	    </LinearLayout>
+    
+    </LinearLayout>
+</RelativeLayout>
